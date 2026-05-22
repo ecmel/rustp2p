@@ -253,7 +253,7 @@ pub use tunnel::{NodeAddress, PeerNodeAddress, RecvUserData};
 #[cfg(feature = "use-kcp")]
 pub use reliable::*;
 
-use crate::config::PunchingPolicy;
+pub use crate::config::{PunchingPolicy, PunchRole};
 pub use crate::config::{DataInterceptor, DefaultInterceptor};
 use crate::protocol::protocol_type::ProtocolType;
 pub use crate::tunnel::{RecvMetadata, RecvResult};
